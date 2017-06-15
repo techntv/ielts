@@ -1,13 +1,5 @@
 <template>
-  <div class="home-page">
-      <header>
-          <ul class="menu align-right">
-            <li><a href="#">One</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
-            <li><a href="#">Four</a></li>
-          </ul>        
-      </header>
+  <div class="home-page">      
       <section class="main-content">
         <section class="section-hero">
           <div class="row">
@@ -20,43 +12,50 @@
         </section>
 
         <section class="section-product">
-          <div class="product-text">
-            <h2>IELTS TEST</h2>
-            <p>List of the best IELTS test</p>
+          <div class="row">
+            <div class="column small-12">
+                <div class="product-text text-center">
+                    <h2>Song that you like</h2>
+                    <p>You can learn english by listen english</p>
+                  </div>
+            </div>
           </div>
+         
 
-          <div class="product-list">
+          <div class="song-list">
             <div class="row">
-              <div class="column small-12 medium-4">
-                <a href="/post">
+              <div class="column small-12 medium-4 flex-container">
+               
                   <div class="card">
-                      <img class="text-center" src="http://res.cloudinary.com/techntvz/image/upload/v1497495409/camb11_hnjkhh.png" alt="">
+                       <a href="/post"><img class="text-center" src="http://res.cloudinary.com/techntvz/image/upload/v1497500721/takemetoyourheart_aovspc.jpg" alt=""></a>
                       <div class="card-section">
-                        <h4>Cambridge IELTS with answer 11</h4>
-                        <p>Complete test and answer of Cambridge 11.</p>
+                        <h4>Take me to your heart</h4>
+                        <p>Micheal learn to rock</p>
                       </div>
                   </div>
-                </a>
+                
                 
                 
               </div>
-              <div class="column small-12 medium-4">
-                    <div class="card">
-                          <img class="text-center" src="http://res.cloudinary.com/techntvz/image/upload/v1497495409/camb11_hnjkhh.png" alt="">
-                          <div class="card-section">
-                            <h4>Cambridge IELTS with answer 11</h4>
-                            <p>Complete test and answer of Cambridge 11.</p>
-                          </div>
-                    </div>
+              <div class="column small-12 medium-4 flex-container">                   
+                        <div class="card">
+                             <a href="/post"><img class="text-center" src="http://res.cloudinary.com/techntvz/image/upload/v1497502479/mylove_emmdwv.jpg" alt=""></a>
+                            <div class="card-section">
+                              <h4>My Love</h4>
+                              <p>Westlife</p>
+                            </div>
+                        </div>
+                  
               </div>
-              <div class="column small-12 medium-4">
-                 <div class="card">
-                      <img class="text-center" src="http://res.cloudinary.com/techntvz/image/upload/v1497495409/camb11_hnjkhh.png" alt="">
+              <div class="column small-12 medium-4 flec-container">                
+                  <div class="card">
+                      <a href="/post"><img class="text-center" src="http://res.cloudinary.com/techntvz/image/upload/v1497502390/ifletyougo_x75kl4.jpg" alt=""></a>
                       <div class="card-section">
-                        <h4>Cambridge IELTS with answer 11</h4>
-                        <p>Complete test and answer of Cambridge 11.</p>
+                        <h4>If I Let You Go</h4>
+                        <p>Westlife</p>
                       </div>
-                </div>
+                  </div>
+                
               </div>
             </div>
           </div>
