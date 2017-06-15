@@ -5,9 +5,11 @@
           <ul class="menu align-right">
             <li><a href="/">Home</a></li>
             <li><a href="about">About</a></li>
-            <li><a href="register">Sign Up</a></li>                      
+            <li><a href="register">Login/Signup</a></li> 
+                                 
           </ul>        
       </header>  
+
     <router-view></router-view>
   </div>
 </template>
@@ -19,7 +21,12 @@ import '../node_modules/what-input/dist/what-input.js'
 import '../node_modules/foundation-sites/dist/js/foundation.min.js'
 
 export default {
-  name: 'app'  
+  name: 'app',
+  data (){
+    return {
+      
+    }
+  } 
 }
 </script>
 

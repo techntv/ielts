@@ -4,7 +4,7 @@ import About from '@/components/About'
 import Blog from '@/components/Blog'
 import Post from '@/components/Post'
 import Home from '@/components/Home'
-import Login from '@/components/Login'
+// import Login from '@/components/Login'
 import Register from '@/components/Register'
 
 Vue.use(Router)
@@ -32,11 +32,11 @@ export default new Router({
       name: 'Post',
       component: Post
     },
-    {
-      path: '/login',
-      name: 'Login',
-      component: Login
-    },
+    // {
+    //   path: '/login',
+    //   name: 'Login',
+    //   component: Login
+    // },
     {
       path: '/register',
       name: 'Register',
