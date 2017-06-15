@@ -72,13 +72,13 @@ let config = {
   messagingSenderId: '1018774675297'
 }    
 let app = firebase.initializeApp(config)
-let data = app.database()
-let userData = data.ref('users')
+let db = app.database()
+let userRef = db.ref('users')
 
 export default {
   name: 'register',
   firebase: {
-    users: userData
+    users: userRef
   },
   data () {
     return {
@@ -90,7 +90,7 @@ export default {
   },
   methods: {
       addUser (){
-        userData.push(this.newUser)
+        userRef.push(this.newUser)
         this.newUser.name = ''
         this.newUser.email = ''
       }
