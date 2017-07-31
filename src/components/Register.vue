@@ -12,7 +12,7 @@
                             <label for="email" class="text-left middle">Email</label>
                             </div>
                             <div class="small-12 medium-6 columns">
-                            <input v-model:email="auth.email" type="email" id="email" placeholder="Email" name="email">
+                            <input v-model:="auth.email" type="email" id="email" placeholder="Email" name="email">
                             </div>
                         </div> 
                         <div class="row">
@@ -20,7 +20,7 @@
                             <label for="password" class="text-left middle">Password</label>
                             </div>
                             <div class="small-12 medium-6 columns">
-                            <input v-model:password="auth.password" type="password" id="password" placeholder="Password" name="password">
+                            <input v-model:="auth.password" type="password" id="password" placeholder="Password" name="password">
                             </div>
                         </div> 
                         <!--<div class="row">
@@ -51,7 +51,7 @@
 
       </div>
   </div>
-  <div class="admin-page" v-else="isAuthenticated">
+  <div class="admin-page" v-if="isAuthenticated">
       <h1>Login success. This is a admin page</h1>
       <button v-on:click.stop.prevent="signOut" class="button success">Sign out</button>
   </div>
@@ -80,7 +80,7 @@ export default {
   data () {
     return {
       newUser : {
-        namme: '',
+        name: '',
         email: ''
       },
       auth: {
